@@ -129,3 +129,19 @@
 ; (A 0 (A 0 16384))
 ; (A 0 32768)
 ; 65536
+
+; Give the concise mathematical definitions for the functions computed by the
+; procedures f, g, and h for positive integer values of n.
+
+; 2n
+(define (f n) (A 0 n))
+
+; 2^n
+(define (g n) (A 1 n))
+
+; 2^(2^n-1)
+; (h 1) = 2
+; (h 2) = 4
+; (h 3) = 16
+; (h 4) = 65536
+(define (h n) (A 2 n))
