@@ -1,11 +1,11 @@
 #lang sicp
 
 (define (smallest-divisor n) 
-  (define (iter x test-divisor) 
-    (cond ((> (square test-divisor) x) x) 
-          ((divides? test-divisor x) test-divisor) 
-          (else (iter n (+ test-divisor 1)))))
-  (iter n 2))
+  (define (iter test-divisor) 
+    (cond ((> (square test-divisor) n) n) 
+          ((divides? test-divisor n) test-divisor) 
+          (else (iter (+ test-divisor 1)))))
+  (iter 2))
 
 (define (divides? divisor n) 
   (= (remainder n divisor) 0))
