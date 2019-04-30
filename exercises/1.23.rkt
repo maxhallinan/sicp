@@ -6,7 +6,7 @@
 1000000009 *** 355
 1000000021 *** 354
 Total: 1962
-1.19928644241 times faster than version 2
+1.19928644241 times faster than version 1
 
 10000000000
 10000000019 *** 1155
